@@ -1,0 +1,41 @@
+datasets:
+  LacI_apo:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LACI_APO_DNA_BOUND/pdb_file-dfianalysis.csv"
+      condition: "LacI_apo"
+      swap: true
+      start: 2
+      myformat: false
+    output: 'output/LACI_PURR_LLHP/LacI_apo'
+    title: "LacI_apo"
+    color: '#1f77b4'
+    score: 'DFI'
+
+  LacI_iptg:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LACI_IPTG_DNA_BOUND/efa_iptg_bound-dfianalysis.csv"
+      condition: "LacI_iptg"
+      swap: true
+      start: 2
+      myformat: false
+    output: 'output/LACI_PURR_LLHP/LacI_iptg'
+    title: "LacI_iptg"
+    color: '#dacd16'
+    score: 'DFI'
+
+  LacI_onpf:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LACI_ONPF_DNA_BOUND/efa_onpf_bound-dfianalysis.csv"
+      condition: "LacI_onpf"
+      swap: true
+      start: 2
+      myformat: false
+    output: 'output/LACI_PURR_LLHP/LacI_onpf'
+    title: "LacI_onpf"
+    color: '#d72380'
+    score: 'DFI'
+
+all:
+  all_output: 'output/LACI_PURR_LLHP/all_dfi'
+  all_title: 'LACI DNA BOUND DFI'
+  heatmap_dir: output/LACI_LLHP_PURR/heatmaps

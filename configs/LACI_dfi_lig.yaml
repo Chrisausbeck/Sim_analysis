@@ -1,0 +1,42 @@
+datasets:
+
+  LacI_onpf:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LACI_ONPF_DNA_BOUND/efa_onpf_bound-dfianalysis.csv"
+      condition: "LacI_onpf"
+      swap: true
+      start: 2
+      myformat: false
+    output: 'output/LACI_PURR_LLHP/LacI_onpf'
+    title: "LacI_onpf"
+    color: '#1f77b4'
+    score: 'DFI'
+
+  LLHP_lig:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LLHP_DNA_BOUND_ligbound/PurR-averaged-results.csv"
+      condition: "LLHP_lig"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/LACI_PURR_LLHP/LLHP_lig'
+    title: "LLHP_lig"
+    color: '#dacd16'
+    score: 'DFI'
+
+  PurR_lig:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/PURR_DNA_BOUND_ligbound/PurR-averaged-results.csv"
+      condition: "PurR_lig"
+      swap: false
+      start: 5
+      myformat: false
+    output: 'output/LACI_PURR_LLHP/PurR_lig'
+    title: "PurR_lig"
+    color: '#d72380'
+    score: 'DFI'
+
+all:
+  all_output: 'output/LACI_PURR_LLHP/all_dfi'
+  all_title: 'DNA BOUND DFI LIGAND'
+  heatmap_dir: output/LACI_LLHP_PURR/heatmaps

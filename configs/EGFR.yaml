@@ -1,0 +1,116 @@
+datasets:
+  WT:
+    data_to_load:
+      file_path: "data/EGFR/DCI/WT/egfr-averaged-dci.csv"
+      condition: "WT"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/EGFR/WT'
+    title: 'EGFR WT'
+    color: '#1f77b4'
+
+  A289V:
+    data_to_load:
+      file_path: "data/EGFR/DCI/A289V/egfr-averaged-dci.csv"
+      condition: "A289V"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/EGFR/A289V'
+    title: 'EGFR A289V'
+    color: '#2ca02c'
+
+  G598V:
+    data_to_load:
+      file_path: "data/EGFR/DCI/G598V/egfr-averaged-dci.csv"
+      condition: "G598V"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/EGFR/G598V'
+    title: 'EGFR G598V'
+    color: '#d62728'
+
+  L858R:
+    data_to_load:
+      file_path: "data/EGFR/DCI/L858R/egfr-averaged-dci.csv"
+      condition: "L858R"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/EGFR/L858R'
+    title: 'EGFR L858R'
+    color: '#dacd16'
+
+  R98Q:
+    data_to_load:
+      file_path: "data/EGFR/DCI/R98Q/egfr-averaged-dci.csv"
+      condition: "R98Q"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/EGFR/R98Q'
+    title: 'EGFR R98Q'
+    color: '#25cd9e'
+
+  R671C:
+    data_to_load:
+      file_path: "data/EGFR/DCI/R671C/egfr-averaged-dci.csv"
+      condition: "R671C"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/EGFR/R671C'
+    title: 'EGFR R671C'
+    color: '#d72380'
+
+  S306L:
+    data_to_load:
+      file_path: "data/EGFR/DCI/S306L/egfr-averaged-dci.csv"
+      condition: "S306L"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/EGFR/S306L'
+    title: 'EGFR S306L'
+    color: '#9026d7'
+
+  T790M:
+    data_to_load:
+      file_path: "data/EGFR/DCI/T790M/egfr-averaged-dci.csv"
+      condition: "T790M"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/EGFR/T790M'
+    title: 'EGFR T790M'
+    color: '#d76726'
+
+  V774M:
+    data_to_load:
+      file_path: "data/EGFR/DCI/V774M/egfr-averaged-dci.csv"
+      condition: "V774M"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/EGFR/V774M'
+    title: 'EGFR V774M'
+    color: '#269fd7'
+
+  V834L:
+    data_to_load:
+      file_path: "data/EGFR/DCI/V834L/egfr-averaged-dci.csv"
+      condition: "V834L"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/EGFR/V834L'
+    title: 'EGFR V834L'
+    color: '#84d726'
+all:
+  all_output: 'output/EGFR/all_dfi'
+  all_title: 'EGFR Mutations DFI'
+  heatmap_dir: 'output/EGFR/heatmaps'
+  density_dir: 'output/EGFR/density_plots'
+  residues: [845, 920, 992]

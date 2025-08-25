@@ -1,0 +1,42 @@
+datasets:
+  WT:
+    data_to_load:
+      file_path: "data/EGFR/DCI/WT/rmsf.xvg"
+      condition: "WT"
+      swap: false
+      start: 1
+      myformat: false
+      delimiter: '\s+'
+    output: 'output/EGFR/WT'
+    title: 'EGFR WT RMSF'
+    color: '#1f77b4'
+    score: 'rmsf'
+
+  A289V:
+    data_to_load:
+      file_path: "data/EGFR/DCI/A289V/rmsf.xvg"
+      condition: "A289V"
+      swap: false
+      start: 1
+      myformat: false
+      delimiter: '\s+'
+    output: 'output/EGFR/A289V'
+    title: 'EGFR A289V RMSF'
+    color: '#2ca02c'
+    score: 'rmsf'
+
+  G598V:
+    data_to_load:
+      file_path: "data/EGFR/DCI/G598V/rmsf.xvg"
+      condition: "G598V"
+      swap: false
+      start: 1
+      myformat: false
+      delimiter: '\s+'
+    output: 'output/EGFR/G598V'
+    title: 'EGFR G598V RMSF'
+    color: '#d62728'
+    score: 'rmsf'
+all:
+  all_output: 'output/EGFR/all_rmsf'
+  all_title: 'EGFR RMSF'

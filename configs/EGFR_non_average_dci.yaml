@@ -1,0 +1,40 @@
+datasets:
+  WT:
+    data_to_load:
+      file_path: "data/EGFR/DCI/WT/egfr-all-dci.csv"
+      condition: "WT"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/EGFR_non_averaged/WT'
+    title: 'EGFR WT'
+    color: '#1f77b4'
+
+  A289V:
+    data_to_load:
+      file_path: "data/EGFR/DCI/A289V/egfr_A289V-all-dci.csv"
+      condition: "A289V"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/EGFR_non_averaged/A289V'
+    title: 'EGFR A289V'
+    color: '#2ca02c'
+
+  G598V:
+    data_to_load:
+      file_path: "data/EGFR/DCI/G598V/egfr_G598V-all-dci.csv"
+      condition: "G598V"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/EGFR_non_averaged/G598V'
+    title: 'EGFR G598V'
+    color: '#d62728'
+
+all:
+  all_output: 'output/EGFR_non_averaged/all_dci'
+  all_title: 'EGFR Mutations DCI'
+  heatmap_dir: 'output/EGFR_non_averaged/heatmaps'
+  density_dir: 'output/EGFR_non_averaged/density_plots'
+  residues: [845, 920, 992]

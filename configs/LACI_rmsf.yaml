@@ -1,0 +1,40 @@
+datasets:
+  LacI_apo:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LACI_APO_DNA_BOUND/rmsf_apo.txt"
+      condition: "LacI_apo"
+      swap: true
+      start: 2
+      myformat: false
+      create_resI: true
+    output: 'output/LACI_PURR_LLHP/LacI_apo'
+    title: "LacI_apo_rmsf"
+    color: '#1f77b4'
+
+  LacI_iptg:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LACI_IPTG_DNA_BOUND/rmsf_iptg.txt"
+      condition: "LacI_iptg"
+      swap: true
+      start: 2
+      myformat: false
+      create_resI: true
+    output: 'output/LACI_PURR_LLHP/LacI_iptg'
+    title: "LacI_iptg_rmsf"
+    color: '#2ca02c'
+
+  LacI_onpf:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LACI_ONPF_DNA_BOUND/rmsf_onpf.txt"
+      condition: "LacI_onpf"
+      swap: true
+      start: 2
+      myformat: false
+      create_resI: true
+    output: 'output/LACI_PURR_LLHP/LacI_onpf'
+    title: "LacI_onpf_rmsf"
+    color: '#d62728'
+
+all:
+  all_output: 'output/LACI_PURR_LLHP/all_rmsf'
+  all_title: 'LACI DNA BOUND RMSF'

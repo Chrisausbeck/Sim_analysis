@@ -1,0 +1,89 @@
+datasets:
+  LacI_apo:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LACI_APO_DNA_BOUND/pdb_file-all-dci.csv"
+      condition: "LacI_apo"
+      swap: false
+      start: 2
+      myformat: false
+      shift: 0
+    output: 'output/LACI_PURR_LLHP/LacI_apo'
+    title: "LacI_apo"
+    color: '#1f77b4'
+
+  LacI_iptg:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LACI_IPTG_DNA_BOUND/1efa_iptg_bound-all-dci.csv"
+      condition: "LacI_iptg"
+      swap: false
+      start: 2
+      myformat: false
+      shift: 0
+    output: 'output/LACI_PURR_LLHP/LacI_iptg'
+    title: "LacI_iptg"
+    color: '#2ca02c'
+
+  LacI_onpf:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LACI_ONPF_DNA_BOUND/1efa_onpf_bound-all-dci.csv"
+      condition: "LacI_onpf"
+      swap: false
+      start: 2
+      myformat: false
+      shift: 0
+    output: 'output/LACI_PURR_LLHP/LacI_onpf'
+    title: "LacI_onpf"
+    color: '#d62728'
+
+  LLHP_lig:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LLHP_DNA_BOUND_ligbound/PurR-averaged-dci.csv"
+      condition: "LLHP_lig"
+      swap: false
+      start: 1
+      myformat: true
+      shift: 0
+    output: 'output/LACI_PURR_LLHP/LLHP_lig'
+    title: "LLHP_lig"
+    color: '#dacd16'
+
+  LLHP_apo:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LLHP_DNA_BOUND_unbound/PurR-averaged-dci.csv"
+      condition: "LLHP_apo"
+      swap: false
+      start: 1
+      myformat: true
+      shift: 0
+    output: 'output/LACI_PURR_LLHP/LLHP_apo'
+    title: "LLHP_apo"
+    color: '#25cd9e'
+
+  PurR_lig:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/PURR_DNA_BOUND_ligbound/PurR-averaged-dci.csv"
+      condition: "PurR_lig"
+      swap: false
+      start: 5
+      myformat: true
+      shift: 0
+    output: 'output/LACI_PURR_LLHP/PurR_lig'
+    title: "PurR_lig"
+    color: '#d72380'
+
+  PurR_apo:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/PURR_DNA_BOUND_unbound/PurR-averaged-dci.csv"
+      condition: "PurR_apo"
+      swap: false
+      start: 5
+      myformat: true
+      shift: 0
+    output: 'output/LACI_PURR_LLHP/PurR_apo'
+    title: "PurR_apo"
+    color: '#9026d7'
+all:
+  all_output: 'output/LACI_PURR_LLHP/all_dfi'
+  all_title: 'DNA BOUND DFI'
+  heatmap_dir: output/LACI_PURR_LLHP/heatmaps
+  

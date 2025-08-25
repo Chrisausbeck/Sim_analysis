@@ -1,0 +1,83 @@
+datasets:
+  LacI_apo:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LACI_APO_DNA_BOUND/pdb_file-dfianalysis.csv"
+      condition: "LacI_apo"
+      swap: true
+      start: 2
+      myformat: false
+    output: 'output/LACI_PURR_LLHP/LacI_apo'
+    title: "LacI_apo"
+    color: '#1f77b4'
+    score: 'DFI'
+    bound: false
+
+  LacI_onpf:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LACI_ONPF_DNA_BOUND/efa_onpf_bound-dfianalysis.csv"
+      condition: "LacI_onpf"
+      swap: true
+      start: 2
+      myformat: false
+    output: 'output/LACI_PURR_LLHP/LacI_onpf'
+    title: "LacI_onpf"
+    color: '#d62728'
+    score: 'DFI'
+    bound: true
+
+  LLHP_lig:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LLHP_DNA_BOUND_ligbound/PurR-averaged-results.csv"
+      condition: "LLHP_lig"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/LACI_PURR_LLHP/LLHP_lig'
+    title: "LLHP_lig"
+    color: '#dacd16'
+    score: 'DFI'
+    bound: true
+
+  LLHP_apo:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/LLHP_DNA_BOUND_unbound/PurR-averaged-results.csv"
+      condition: "LLHP_apo"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/LACI_PURR_LLHP/LLHP_apo'
+    title: "LLHP_apo"
+    color: '#25cd9e'
+    score: 'DFI'
+    bound: false
+
+  PurR_lig:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/PURR_DNA_BOUND_ligbound/PurR-averaged-results.csv"
+      condition: "PurR_lig"
+      swap: false
+      start: 5
+      myformat: false
+    output: 'output/LACI_PURR_LLHP/PurR_lig'
+    title: "PurR_lig"
+    color: '#d72380'
+    score: 'DFI'
+    bound: true
+
+  PurR_apo:
+    data_to_load:
+      file_path: "data/LACI_LLHP_PURR/PURR_DNA_BOUND_unbound/PurR-averaged-results.csv"
+      condition: "PurR_apo"
+      swap: true
+      start: 5
+      myformat: false
+    output: 'output/LACI_PURR_LLHP/PurR_apo'
+    title: "PurR_apo"
+    color: '#9026d7'
+    score: 'DFI'
+    bound: false
+all:
+  all_output: 'output/LACI_PURR_LLHP/all_dfi'
+  all_title: 'DNA BOUND DFI'
+  heatmap_dir: output/LACI_LLHP_PURR/heatmaps
+  density_dir: output/LACI_PURR_LLHP/density_plots
