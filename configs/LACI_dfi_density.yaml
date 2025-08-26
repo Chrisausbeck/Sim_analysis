@@ -10,7 +10,7 @@ datasets:
     title: "LacI_apo"
     color: '#1f77b4'
     score: 'DFI'
-    bound: [0,60]
+    bound: false
 
   LacI_onpf:
     data_to_load:
@@ -23,7 +23,7 @@ datasets:
     title: "LacI_onpf"
     color: '#1f77b4'
     score: 'DFI'
-    bound: [0,60]
+    bound: true
 
   LLHP_lig:
     data_to_load:
@@ -36,7 +36,7 @@ datasets:
     title: "LLHP_lig"
     color: '#dacd16'
     score: 'DFI'
-    bound: [0,60]
+    bound: true
 
   LLHP_apo:
     data_to_load:
@@ -49,7 +49,7 @@ datasets:
     title: "LLHP_apo"
     color: '#dacd16'
     score: 'DFI'
-    bound: [0,60]
+    bound: false
 
   PurR_lig:
     data_to_load:
@@ -62,7 +62,7 @@ datasets:
     title: "PurR_lig"
     color: '#d72380'
     score: 'DFI'
-    bound: [0,60]
+    bound: true
 
   PurR_apo:
     data_to_load:
@@ -75,7 +75,7 @@ datasets:
     title: "PurR_apo"
     color: '#d72380'
     score: 'DFI'
-    bound: [0,60]
+    bound: false
 all:
   all_output: 'output/LACI_PURR_LLHP/all_dfi'
   all_title: 'DNA BOUND DFI'

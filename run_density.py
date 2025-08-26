@@ -47,10 +47,6 @@ for label, dataset_args in datasets.items():
 
     # Run analysis (modify this as needed)
     chain_df = get_chains(df, score)
-    # Select points within the given bounds
-    if bound == tuple:
-        lower, upper = bound # assuming bound is a tuple (lower, upper)
-        chain_df = chain_df[(chain_df['ResI'] >= lower) & (chain_df['ResI'] <= upper)]
 
     #plot single density protein
     plt.figure(figsize=(10, 6))
