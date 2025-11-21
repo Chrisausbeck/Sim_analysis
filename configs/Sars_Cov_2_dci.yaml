@@ -1,0 +1,26 @@
+datasets:
+  P132H_non_protonated:
+    data_to_load:
+      file_path: "data/Sars_Cov_2/P132H_non_protonated/8di3_non_protonated-averaged-dci.csv"
+      condition: "P132H_non_protonated"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/Sars_Cov_2/P132H_non_protonated'
+    title: 'P132H_non_protonated'
+    color: '#1f77b4'
+
+  WT:
+    data_to_load:
+      file_path: "data/Sars_Cov_2/WT/mpro_5r7y_avgdci.csv"
+      condition: "WT"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/Sars_Cov_2/WT'
+    title: 'WT'
+    color: '#1f77b4'
+all:
+  all_output: 'output/Sars_Cov_2/heatmaps'
+  all_title: 'Mpro DCI'
+  heatmap_dir: output/Sars_Cov_2/heatmaps

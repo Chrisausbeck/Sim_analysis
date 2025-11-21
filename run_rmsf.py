@@ -7,7 +7,7 @@ from src.plotting import plot_chains
 from src.analysis import get_chains
 
 # YAML Parameters
-with open("configs/EGFR_rmsf.yaml", 'r') as f:
+with open("configs/P132H_rmsf.yaml", 'r') as f:
     config = yaml.safe_load(f)
 
 #set datasets to YAML file

@@ -8,12 +8,12 @@ def swap_prefix(col):
         return 'A' + col[1:]
     return col
 
-def increment_column(col, shift):
-    match = re.match(r"([A-Z])(\d+)(_mean)", col)
+def increment_columns_or_index(col, start):
+    match = re.match(r"([A-Z])(\d+)", col)
     if match:
-        letter, num, suffix = match.groups()
-        new_num = int(num) + shift
-        return f"{letter}{new_num}{suffix}"
+        letter, num = match.groups()
+        new_num = int(num) + start
+        return f"{letter}{new_num}"
     return col
 
 

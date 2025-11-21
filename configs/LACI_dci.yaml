@@ -6,7 +6,6 @@ datasets:
       swap: false
       start: 2
       myformat: false
-      shift: 0
     output: 'output/LACI_PURR_LLHP/LacI_apo'
     title: "LacI_apo"
     color: '#1f77b4'
@@ -18,7 +17,6 @@ datasets:
       swap: false
       start: 2
       myformat: false
-      shift: 0
     output: 'output/LACI_PURR_LLHP/LacI_iptg'
     title: "LacI_iptg"
     color: '#2ca02c'
@@ -30,7 +28,6 @@ datasets:
       swap: false
       start: 2
       myformat: false
-      shift: 0
     output: 'output/LACI_PURR_LLHP/LacI_onpf'
     title: "LacI_onpf"
     color: '#d62728'
@@ -42,7 +39,6 @@ datasets:
       swap: false
       start: 1
       myformat: true
-      shift: 0
     output: 'output/LACI_PURR_LLHP/LLHP_lig'
     title: "LLHP_lig"
     color: '#dacd16'
@@ -54,7 +50,6 @@ datasets:
       swap: false
       start: 1
       myformat: true
-      shift: 0
     output: 'output/LACI_PURR_LLHP/LLHP_apo'
     title: "LLHP_apo"
     color: '#25cd9e'
@@ -66,7 +61,6 @@ datasets:
       swap: false
       start: 5
       myformat: true
-      shift: 0
     output: 'output/LACI_PURR_LLHP/PurR_lig'
     title: "PurR_lig"
     color: '#d72380'
@@ -78,7 +72,6 @@ datasets:
       swap: false
       start: 5
       myformat: true
-      shift: 0
     output: 'output/LACI_PURR_LLHP/PurR_apo'
     title: "PurR_apo"
     color: '#9026d7'

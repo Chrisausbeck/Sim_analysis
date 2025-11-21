@@ -1,0 +1,19 @@
+datasets:
+  P132H_non_protonated:
+    data_to_load:
+      file_path: "data/Sars_Cov_2/P132H_non_protonated/rmsd_8di3_4.csv"
+      condition: "P132H_non_protonated"
+      swap: true
+      start: 1
+      myformat: false
+      create_resI: false
+      delimiter: ','
+    output: 'output/Sars_Cov_2/P132H_non_protonated'
+    title: "P132H_non_protonated_rmsd_600-800ns"
+    color: '#1f77b4'
+    score_x: 'frame'
+    score_y: 'rmsd'
+
+all:
+  all_output: 'output/Sars_Cov_2/all_rmsd'
+  all_title: 'Sars_Cov_2 RMSD'

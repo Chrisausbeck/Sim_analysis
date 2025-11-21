@@ -6,7 +6,7 @@ from src.load_data import load_and_prepare
 from src.plotting import plot_any
 
 # YAML Parameters
-with open("configs/EGFR_rmsd.yaml", 'r') as f:
+with open("configs/P132H_rmsd.yaml", 'r') as f:
     config = yaml.safe_load(f)
 
 #set datasets to YAML file

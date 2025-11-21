@@ -1,0 +1,28 @@
+datasets:
+  P132H_non_protonated:
+    data_to_load:
+      file_path: "data/Sars_Cov_2/P132H_non_protonated/8di3_non_protonated-dfianalysis.csv"
+      condition: "P132H_non_protonated"
+      swap: false
+      start: 1
+      myformat: false
+      create_resI: false
+    output: 'output/Sars_Cov_2/P132H_non_protonated'
+    title: 'P132H non-protonated'
+    color: '#2ca02c'
+    score: 'DFI'
+  WT:
+    data_to_load:
+      file_path: "data/Sars_Cov_2/WT/CoV2_mPro_DFImets March 23 2024 from PC.csv"
+      condition: "WT"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/Sars_Cov_2/WT'
+    title: 'WT'
+    color: '#1f77b4'
+    score: 'DFI'
+all:
+  all_output: 'output/Sars_Cov_2/dfi'
+  all_title: 'Sars_Cov_2 DFI'
+  heatmap_dir: output/Sars_Cov_2/heatmaps

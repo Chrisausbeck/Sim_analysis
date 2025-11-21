@@ -1,0 +1,28 @@
+datasets:
+  egfr_v3:
+    data_to_load:
+      file_path: "data/EGFR/DCI/egfr_v3/egfr_v3-averaged-dfi.csv"
+      condition: "egfr_v3"
+      swap: false
+      start: 268
+      myformat: false
+      create_resI: true
+    output: 'output/EGFR/egfr_v3'
+    title: 'EGFR v3'
+    color: '#2ca02c'
+    score: 'dfi'
+  WT:
+    data_to_load:
+      file_path: "data/EGFR/DCI/WT/egfr-dfianalysis.csv"
+      condition: "WT"
+      swap: false
+      start: 1
+      myformat: false
+    output: 'output/EGFR/WT'
+    title: 'EGFR WT'
+    color: '#1f77b4'
+    score: 'dfi'
+all:
+  all_output: 'output/EGFR/egfr_v3/heatmaps'
+  all_title: 'EGFR_v3 DFI'
+  heatmap_dir: output/EGFR/egfr_v3/heatmaps

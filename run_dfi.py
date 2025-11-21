@@ -8,7 +8,7 @@ from src.analysis import get_chains
 from src.plotting import plot_chain_difference
 
 # YAML Parameters
-with open("configs/LACI_dfi_apo.yaml", 'r') as f:
+with open("configs/Sars_Cov_2_dfi.yaml", 'r') as f:
     config = yaml.safe_load(f)
 
 #set datasets to YAML file
@@ -52,9 +52,9 @@ for label, dataset_args in datasets.items():
     plt.ylabel('DFI')
     plt.xlabel('ResI')
     plt.savefig(os.path.join(output, title), dpi=300)
-    plt.xlim(50, 350)
-    plt.ylim(0, 0.003)
-    plt.savefig(os.path.join(output, title + ' zoomed'), dpi=300)
+    #plt.xlim(50, 350)
+    #plt.ylim(0, 0.003)
+    #plt.savefig(os.path.join(output, title + ' zoomed'), dpi=300)
     plt.close()
 
     # 2. Add to combined "all datasets" plot
@@ -71,9 +71,9 @@ plt.title(all_title)
 plt.ylabel('DFI')
 plt.xlabel('ResI')
 plt.savefig(os.path.join(all_output, all_title), dpi=300)
-plt.xlim(50, 350)
-plt.ylim(0, 0.003)
-plt.savefig(os.path.join(all_output, all_title + ' zoomed'), dpi=300)
+#plt.xlim(50, 350)
+#plt.ylim(0, 0.003)
+#plt.savefig(os.path.join(all_output, all_title + ' zoomed'), dpi=300)
 plt.close()
 
 plt.figure(2)

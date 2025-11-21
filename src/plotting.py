@@ -74,9 +74,18 @@ def plot_un_lig(df_lig1, df_lig2, df_un1, df_un2, residue, output_dir):
     plt.savefig(os.path.join(output_dir, f"{residue}__Diff_DCI_lig_un.png"))
     plt.close()
 
-def heatmap(dataframe, min_value, max_value, output_dir, heatmap_dir, title, cmap):
+def heatmap(dataframe, min_value, max_value, output_dir, heatmap_dir, title, cmap, ticks):
     df = dataframe.drop('Condition', axis=1)
-    sns.heatmap(df, vmin=min_value, vmax=max_value, cmap=cmap)
+    fig, ax = plt.subplots(figsize=(10, 8))
+    sns.heatmap(df, ax=ax, vmin=min_value, vmax=max_value, cmap=cmap)
+    if ticks.any() > 0:
+        # Heatmap cells are centered at 0.5, 1.5, ... so add 0.5
+        ax.set_xticks(ticks + 0.5)
+        ax.set_yticks(ticks + 0.5)
+
+        # Attach the string labels
+        ax.set_xticklabels(df.columns[ticks], rotation=90)
+        ax.set_yticklabels(df.columns[ticks])
     plt.title(title)
     plt.savefig(os.path.join(output_dir, title), dpi=300)
     plt.savefig(os.path.join(heatmap_dir, title), dpi=300)
@@ -85,7 +94,9 @@ def heatmap(dataframe, min_value, max_value, output_dir, heatmap_dir, title, cma
 def plot_residue(dataframe, residue, color):
     sns.lineplot(data=dataframe, x=dataframe.index, y=dataframe['A' + str(residue)], label = dataframe['Condition'].iloc[2], color=color, linestyle='-', linewidth=0.5)
     sns.lineplot(data=dataframe, x=dataframe.index, y=dataframe['B' + str(residue)], label = dataframe['Condition'].iloc[2], color=color, linestyle='--', linewidth=0.5)
-    plt.xticks(dataframe.index[::100], fontsize=10, rotation=45)
+    
+
+
     plt.ylabel('DCI')
 
 def plot_any(dataframe, x_value, y_value, label=None, color='#1f77b4'):
